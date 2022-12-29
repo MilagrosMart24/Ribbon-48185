@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&family=Amatic+SC:wght@700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---HEADER---*/
+
+body {
+    font-family:'Alexandria', sans-serif;
+    height: 100vh;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color:white;
+    z-index: 1;
+    top: 0px;
+    align-items: center;
+}
+
+header h1 {
+    color:white;
+    background-color:rgba(101,103,40);
+    font-size: 1rem;
+    font-style:arial;
+    font-family:'Poppins', sans-serif;;
+    font-weight: 100px;
+    text-align: center;
+    position: sticky;
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
+    
+   
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+ 
+}
+
+header nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+
+}
+
+.subtitulo {
+    
+    text-align: center;
+    background-color:white;
+    color: rgb(8, 7, 7);
+}
+
+.subtitulo a {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    
+}
+
+
+
+/*----FOOTER----*/
+footer{ 
+    background-color: rgb(219, 231, 210);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.Contacto a img {
+    margin-top: 15px;
+    width: 25px;
+    height: 25px;
+    
+} 
+
+
+
+.Contacto iframe {
+    margin: 10px;
+}
+.Contacto iframe {
+    margin-bottom: 20px;
+    left: 30px;
+}
+.SegundoFooter{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*---INDEX---*/
+
+/*----MAIN----*/
+
+
+
+.compra {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    height: 100vh;
+    background-image:url("../img/bosque.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.compra h3{
+    position: relative;
+    top: 50%;
+}
+.compra a {
+    position: relative;
+    top: 55%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(101,103,40);
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+
+.compra a:hover {
+    background-color: white;
+    color: rgba(101,103,40);
+}
+
+.best {
+    text-align: center;
+    font-size: 2rem;
+} 
+
+.best h2 {
+    display: inline-block;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+}
+.productos div {
+    margin: 5px;
+    text-align: center;
+}
+
+.productos div img {
+    width: 315px;
+    transition-property: width;
+    transition-duration:1s;
+}
+
+.productos div img:hover {
+    width: 350px;
+}
+
+.productos h3 {
+    background-color: rgba(187, 211, 197, 0.363);
+    text-align: center;
+    
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(203, 207, 78);
+    padding: 20px;
+}
+
+.iconos img {
+    width: 150px;
+    height: 150px;
+    
+}
+
+/*---SHOP---*/
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.ProductCard {
+    width: 90%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0,45);
+     
+}
+
+.ProductCard .ImgProduct{
+    position: relative;
+    margin: 0px;
+}
+
+.ProductCard .ImgProduct img {
+    width: 100%;
+}
+
+.ProductCard .InfoProducto {
+    padding: 0px 25px;
+}
+
+.ProductCard .InfoProducto .TittleProduct{
+    font-size: 18px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.ProductCard .InfoProducto .Description {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: rgb(102, 139, 102);
+}
+
+.ProductCard .InfoProducto .Precio {
+    background-color: rgb(219, 231, 210);
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.BottonCart {
+    background-color: #131313;
+    color: #ffffff;
+    padding: 10px 0px;
+    margin-top: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.BottonCart:hover {
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
+.galeria img{
+ width: 100%;
+
+}
+
+/*---NOSOTROS---*/
+
+.nosotros h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.nosotros p {
+    letter-spacing: 1px;
+}
+
+.nosotros h4 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+.naturaleza {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 20px;
+    
+
+}
+
+.naturaleza img{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    
+} 
+
+.inspirate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 20px;
+}
+
+.inspirate img {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+}
+
+
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 960px) {
+    .productos {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .iconos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+
+}
+
+@media screen and (max-width: 960px) {
+    .galeria{
+        grid-template-columns:repeat(2,1fr);
+        
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .galeria{
+        grid-template-columns:repeat(1,1fr);
+        
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    
+}
+
+
