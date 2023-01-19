@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="ropa, estilo, naturaleza, reciclable, medioambiente, indumentaria, unisex, compra, remeras, gorras, camperas, excursiones, sustentable, moda,exterior, temperaturas, calidad, outwear">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>RIBBON</title>
 </head>
 <body>
     <header>
-        <h1> 3 cuotas sin interés con tarjeta / 10% off transferencia</h1>
-        <section class="subtitulo">
-            
-            <a href="../index.html">RIBBON</a>
-            <p>Outwear</p>
+        <section class="Entrada">
+            <h1> 3 cuotas sin interés con tarjeta / 10% off transferencia</h1>
+        </section>
+        <section class="SubtituloNombreMarca">
+            <a href="../index.html"><img src="../img/whale.png" alt=""></a>
         </section>
         <section>
             <nav>
@@ -30,56 +32,56 @@
     </header>
    <main>
     
-        <section class="form">
-            <form action="" method="" enctype="">
-                <div>
-                   <label for="nombre">Nombre:</label>
-                   <input type="text" id="nombre"> 
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido"> 
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"> 
-                </div>
-                <div>
-                    <label for="contrasena">Clave:</label>
-                    <input type="password" id="contrasena"> 
-                </div>
-                <div>
-                    <h3>Genero</h3>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero">
+    <div class="contact_form">
 
-                    <label for="femenino">femenino</label>
-                    <input type="radio" name="genero">
+		<div class="formulario">			
+            <h1>Formulario de contacto</h1>
+		    <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        <form action="submeter-formulario.php" method="post">				
+                <p>
+				    <label for="nombre" class="colocar_nombre">Nombre
+				    <span class="obligatorio">*</span>
+                    </label>
+				    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+				</p>
+				<p>
+					<label for="email" class="colocar_email">Email
+					<span class="obligatorio">*</span>
+					</label>
+					<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+				</p>
+				<p>
+					<label for="telefone" class="colocar_telefono">Teléfono
+					</label>
+					<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+				</p>		
+				<p>
+					<label for="website" class="colocar_website">Sitio web</label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+				</p>		
+				<p>
+					<label for="asunto" class="colocar_asunto">Asunto
+					<span class="obligatorio">*</span>
+					</label>
+					<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+				</p>		
+				<p>
+					<label for="mensaje" class="colocar_mensaje">Mensaje
+					<span class="obligatorio">*</span>
+					</label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>	  								
+							
+					<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="genero">
-                </div>
-                <div>
-                    <select name="select" id="">
-                        <option value="">Pais</option>
-                        <option value="">Argentina</option>
-                        <option value="">Uruguay</option>
-                        <option value="">brazil</option>
-                    </select>
-                    
-                </div>
-                <div>
-                    <h3>Dejanos tu Comentario</h3>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-
-            </form>
-        </section>
-        
+				<p class="aviso">
+					<span class="obligatorio"> * </span>los campos son obligatorios.
+				</p>					
+						
+		</form>
+		</div>	
+	</div>
+    
    </main>
     
 </body>
@@ -94,15 +96,7 @@
     <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.0797474403603!2d-60.63575835638207!3d-32.94679822040032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab197c4b37e3%3A0xf10a7e2062d89b97!2sGaler%C3%ADa%20del%20Paseo!5e0!3m2!1ses!2sar!4v1670034091698!5m2!1ses!2sar" width="300" height="200" style="border: 10px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="SegundoFooter">
-        <p> NEWSLETTER</p>
-        <p2>Suscribite a nuestro newsletter y no te pierdas todas las promos que tenemos para vos</p2>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email"> 
-        </div>
-    </div>
+   
 </footer>
-    
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

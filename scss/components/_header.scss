@@ -1,0 +1,56 @@
+/*------HEADER----*/
+header{
+    position: sticky;
+    top: 0;
+    background-color: $color-principal;
+    z-index: 1;
+    top: 0px;
+    align-items:center;
+    justify-content: space-between;
+    .Entrada h1{
+        color:nth($colores, 4 ) ;
+        background-color:nth($colores, 1 );
+        font-size:nth($font-size,1);
+        font-style:arial;
+        font-family:'Poppins', sans-serif;;
+        font-weight: 100px;
+        text-align:center;
+        position: sticky;
+        animation-name: slidein;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-direction:initial;
+        animation-delay: 3s;
+        padding: 10px;
+    }
+    .SubtituloNombreMarca a{
+        text-align: center;
+    color:nth($colores, 3 );
+    text-decoration: none;
+    }
+    .SubtituloNombreMarca img {
+        width:90px;
+        height: 90px;
+        align-items: center;
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            align-items: center;
+            li{
+                
+                a{
+                    display: flex;
+                    text-decoration: none;
+                    color:nth($colores, 11 );
+                    margin: 5px;
+                    &:hover{
+                        color:nth($colores, 4);
+                    }
+                }
+            }
+        }
+    }
+}

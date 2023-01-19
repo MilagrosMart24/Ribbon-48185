@@ -1,0 +1,49 @@
+$color-principal:rgb(235, 230, 194);
+
+//*listas
+
+$colores:
+
+rgb(163, 177, 138),
+rgb(239, 235, 206),
+rgb(255, 255, 255),
+rgb(8, 7, 7),
+rgb(219, 231, 210),
+rgb(101,103,40),
+rgba(187, 211, 197, 0.363),
+rgb(102, 139, 102),
+rgb(150, 150, 150),
+rgb(70, 70, 70),
+rgb(0, 0, 0);
+
+$font-size:
+
+1rem,
+1.5rem,
+2rem,
+3rem,
+14px,
+15px,
+16px,
+18px;
+
+
+//! OPERACIONES
+//OPERADORES ARITMETICOS + - * /
+
+%grid {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@mixin flex ($flex, $justify,) {
+    display: $flex;
+    justify-content: $justify;
+    
+}
+
+.productos{
+    @include flex (flex, center)
+}
